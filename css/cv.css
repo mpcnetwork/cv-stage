@@ -1,0 +1,553 @@
+/* Mise en page */
+
+* {
+    /* Inclure le padding et les bordure dans la hauteur et largeur
+     totale des éléments de la page */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Roboto";
+    /* Cache le scroll horizontal */
+    overflow-x: hidden;
+}
+
+html {
+    background: #eae8e7;
+    /* Unité css: le Viewport Width */
+    font-size: 1vw;
+}
+
+body {
+    width: 80%;
+}
+
+/*Spécifique au HTML5*/
+
+section, aside, footer {
+    /* Affiche les éléments en tant qu'élements "block" comme <p>.
+    Ils commencent à une nouvelle ligne et prend toute la largeur de la page */
+    display: block;
+}
+
+header {
+    margin: 0 auto;
+    width: 100%;
+    height: 7em;
+    display: inline-block;
+}
+
+
+
+.content header {
+    margin: 0 auto;
+    width: 100%;
+    /* unité css: relatif à la taille de la police courante */
+    height: 7em;
+    /* affiche les éléments comme des containers dans les lignes.
+    Un élément est formatté comme élément interne, mais on peut lui appliquer une hauteur et largeur */
+    display: inline-block;
+}
+
+h3, span, .content section p {
+    margin-left: 16%;
+    margin-right: 2%;
+}
+
+hr {
+    border: 1px solid #e4e4e4;
+    width: 85%;
+    margin: 4% 0 4% 16%;
+}
+
+h1 {
+    background: white;
+    color: black;
+    padding: 10px 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #989898;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+section p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.content .section1 {
+    height: 73rem;
+}
+
+aside {
+    /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    width: 25%;
+    height: 73rem;
+    background-color: #5DA4D9;
+    margin-left: 3.75%;
+    float: left;
+}
+
+aside img {
+    width: 100%;
+}
+
+aside p {
+    margin-left: 18%;
+    margin-top: 0;
+}
+
+aside section h2 {
+    float: left;
+}
+
+.content section {
+    float: right;
+    background-color: white;
+    width: 65%;
+    margin-left: 2.5%;
+    margin-bottom: 1.5%;
+    padding-bottom: 4.45%;
+}
+
+.content section h2 {
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 4;
+    font-weight: 500;
+    color: #767270;
+    padding-bottom: 10px;
+    margin: 0 0 0 4%;
+}
+
+aside section {
+    text-align: left;
+    color: white;
+    width: 100%;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+aside header {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    height: 4em;
+}
+
+footer {
+    background: white;
+    width: 92.5%;
+    height: 100px;
+    padding: 10px 35px 10px 10px;
+    color: #200f08;
+    margin-bottom: 40px;
+    margin-left: 3.75%;
+    margin-right: 3.75%;
+    clear: both !important;
+    text-align: center;
+}
+
+.description span {
+    margin-left: 20%;
+    text-align: left;
+}
+
+.content span {
+    margin-top: 0px;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #5da4d9;
+}
+
+/* Icones du footer */
+
+ul {
+    font-size: 0.9rem;
+}
+
+ul.icons {
+    cursor: default;
+}
+
+ul.icons li {
+    line-height: 1em;
+    padding-left: 0.5em;
+    display: inline-block;
+}
+
+.mainContainer {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card {
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.name {
+    font-size: 2rem;
+    width: 25%;
+    margin-left: 3.75%;
+    margin-bottom: 1%;
+    padding: 1rem 0;
+    text-align: center;
+    float: left;
+    display: block;
+    font-weight: bold;
+}
+
+.description {
+    width: 65%;
+    margin-left: 2.5%;
+    font-size: 2rem;
+    padding: 1rem 0;
+    float: left;
+    font-weight: normal;
+}
+
+.name, .description {
+    background-color: white;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.content .section1 {
+    margin-right: 3.75%;
+}
+
+.content .section2, .content .section4 {
+    float: left;
+    margin-left: 3.75%;
+    width: 45%;
+}
+
+.content .section3 {
+    float: right;
+    margin-right: 3.75%;
+    width: 45%;
+}
+
+/* Grands icones à côté des titres */
+
+.fa-3x .fa-2x {
+    float: left;
+}
+
+.fa-2x {
+    color: white !important;
+    margin: 5% 0 0 5%;
+    width: 50px;
+    float: left;
+}
+
+.fa-3x {
+    margin: 3% 0 0 3%;
+    height: 1em;
+    width: 1em;
+}
+
+.category {
+    font-weight: bold;
+    text-align: end;
+    margin-bottom: -33px;
+    font-size: 1.1em;
+    color: #575757;
+}
+
+.progress {
+    position: relative;
+    display: block;
+    overflow: visible;
+    width: 65%;
+    border-radius: 2px;
+    margin: 0.5rem 0 1rem 3.5rem;
+    background-color: #4783c2;
+    height: 2px;
+}
+
+.determinate {
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+}
+
+/* petits cercles des jauges dans le aside */
+
+.determinate .fa {
+    color: white !important;
+    position: absolute;
+    font-size: 1rem;
+    right: 0px;
+    margin-left: 50%;
+    line-height: 1px;
+}
+
+.lang {
+    color: white;
+    margin-top: 10%;
+}
+
+.small {
+    color: white;
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-top: -10%;
+}
+
+/* Icones du footer */
+
+.icon.circle {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 0;
+    border-radius: 100%;
+    font-size: 1.25em;
+    height: 2.25em;
+    left: 0;
+    line-height: 2.25em;
+    top: 0;
+    width: 2.25em;
+}
+
+.icon {
+    text-decoration: none;
+    position: relative;
+}
+
+.icon.circle:hover {
+    top: -0.1em;
+}
+
+.icon.circle.fa-github, .icon.circle.fa-linkedin, .icon.circle.fa-globe {
+    background: #393939;
+    color: #fff;
+}
+
+.icon.circle.fa-github:hover, .icon.circle.fa-linkedin:hover, .icon.circle.fa-globe:hover {
+    background: #6f6f6f;
+}
+
+.fa {
+    color: #999;
+}
+
+/* Animation des sections */
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        /* translate3d(tx, ty, tz) */
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        /* translate3d(tx, ty, tz) */
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+.name, .description {
+    overflow: hidden;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.section1 {
+    overflow: hidden;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+.section2 {
+    overflow: hidden;
+    -webkit-animation-duration: 1.25s;
+    animation-duration: 1.25s;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+.section3 {
+    overflow: hidden;
+    -webkit-animation-duration: 1.75s;
+    animation-duration: 1.75s;
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+.section4 {
+    overflow: hidden;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+aside {
+    overflow: hidden;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+/*Media query pour le côté "responsive" avec un seuil à 1450px */
+
+@media (max-width:1450px) {
+    body {
+        /*Largeur de 100% lorsque le viewport est à 1450px ou moins*/
+        width: 100%;
+    }
+    html {
+        font-size: 3vw;
+    }
+    .content .card, footer, aside {
+        width: 100%;
+        margin: 1.5% 0;
+        float: left;
+    }
+    .name, .description {
+        width: 100%;
+        float: left;
+        margin: 0;
+    }
+    .content .section1{
+        height: 90rem;
+    }
+    .category {
+        margin-bottom: -24px;
+    }
+    aside {
+      height: 95rem;
+    }
+    aside section h2 {
+        font-size: 2rem;
+    }
+    aside p {
+        margin-left: 21%;
+    }
+    section p {
+        font-size: 1.6rem;
+    }
+    .small {
+        margin-top: -2%;
+    }
+    .lang {
+        font-size: 1.3rem;
+    }
+    .progress {
+        margin-left: 7rem;
+    }
+}
